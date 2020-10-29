@@ -1,0 +1,244 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+header {
+  position: fixed;
+  grid-row: 1;
+  width: 100%;
+  background-color: rgb(50, 50, 50);
+  border-top: 1px solid rgb(199, 7, 7);
+}
+header ul {
+  width: 700px;
+  margin: auto;
+  padding: 0;
+  height: 100%;
+}
+header ul li {
+  margin: 5px 25px 5px 25px;
+  padding: 0;
+  float: right;
+  list-style: none;
+}
+header ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+header ul li:first-child {
+  font-family: "Courier New", Courier, monospace;
+  float: left;
+  margin-left: 10px;
+}
+header ul li a:hover {
+  text-shadow: 0 0 2px rgba(250, 250, 250, 0.5);
+}
+footer {
+  grid-row: 3;
+  text-align: center;
+  font-size: 12px;
+  padding: 20px 0 20px 0;
+}
+footer a {
+  text-decoration-style: dotted;
+}
+main {
+  grid-row: 2;
+  margin-top: 28px;
+  width: 100%;
+}
+section {
+  max-width: 680px;
+  margin: auto;
+  padding: 10px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.about {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: auto auto;
+}
+.about div {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 80px;
+}
+.about img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin: 50px 10px 20px 10px;
+}
+.about ul {
+  margin: 0;
+  padding: 0;
+}
+.about ul li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  list-style: none;
+}
+.about ul li a {
+  border: 2px solid green;
+  border-radius: 3.5px;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  padding: 2px 5px 2px 5px;
+  margin: 0 10px 0 0;
+}
+.about a:hover {
+  border: 2px solid purple;
+  background-color: purple;
+  box-shadow: 0 0 5px rgba(150, 150, 150, 0.8);
+  color: white;
+}
+.about p {
+  padding: 3px;
+  margin: 0;
+  text-decoration: underline;
+}
+.projects {
+  margin: 20px auto 0 auto;
+  padding: 0 0 0 10px;
+}
+.projects h1 {
+  width: 100%;
+  border-bottom: 1px solid whitesmoke;
+  padding-bottom: 5px;
+}
+.anchor {
+  opacity: 0;
+  text-decoration: none;
+}
+.projects h1:hover .anchor {
+  opacity: 1;
+}
+.projects .one {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr;
+  grid-template-rows: none;
+  align-items: center;
+  grid-gap: 20px;
+}
+.one h2 {
+  font-size: 0.9em;
+  grid-column: 1 / 2;
+}
+.one p {
+  font-size: 0.8em;
+  grid-column: 2 / 3;
+}
+.buttons {
+  grid-column: 3 / 4;
+}
+.one a {
+  border: 2px solid purple;
+  border-radius: 3.5px;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 0 0 10px;
+  padding: 5px 5px 5px 5px;
+}
+.one a:hover {
+  border: 2px solid purple;
+  background-color: purple;
+  box-shadow: 0 0 5px rgba(150, 150, 150, 0.8);
+  color: white;
+}
+.buttons a:last-child {
+  padding: 5px 15px 5px 15px;
+  background-image: url(/../images/github.png);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid blue;
+}
+.buttons a:last-child:hover {
+  border: 2px solid purple;
+  background-color: purple;
+  box-shadow: none;
+  background-image: url(/../images/github-white.png);
+  box-shadow: 0 0 5px rgba(150, 150, 150, 0.8);
+}
+
+@media (max-width: 750px) {
+  html {
+    padding: 0 10px 0 10px;
+  }
+  header {
+    margin-left: -10px;
+  }
+  header ul {
+    width: 100%;
+  }
+  section {
+    width: 100%;
+    padding: 0;
+  }
+  .about ul li {
+    display: inline-block;
+    margin: 20px 0 0 0;
+  }
+  .about ul li a {
+    margin: 0;
+  }
+  .projects .one {
+    grid-template-columns: 2fr 4fr 3fr;
+  }
+}
+
+@media (max-width: 440px) {
+  header ul li a {
+    margin: 8px 0 8px 0px;
+    text-align: center;
+    width: 50%;
+  }
+  header ul li a:first-child {
+    width: 100%;
+    text-align: left;
+  }
+  .about {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+  .about div {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .about ul {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .about img {
+    display: none;
+  }
+  .about p {
+    margin-left: 20px;
+  }
+  .projects .one {
+    grid-template-columns: 60% 0 auto;
+    grid-gap: 5px;
+    margin: 10px;
+  }
+  .one p {
+    display: none;
+  }
+  .one a {
+    margin: 0 0 0 5px;
+  }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-139853208-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-139853208-1");
+    </script>
+    <title>Severin's site</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, сыр, производство сыра"
+    />
+    <meta name="description" content="Личный сайт портфолио" />
+    <meta name="author" content="Severin Boguharskiy" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a href="https://sirseverin.ru/">Severin Boguharskiy</a></li>
+        <li><a href="/cheese.html">Сыр</a></li>
+        <li><a href="#about">Основное</a></li>
+      </ul>
+    </header>
+    <main>
+      <section id="about" class="about">
+        <div>
+          Работаю над веб проектами, векторной графикой, а также увлекаюсь
+          производством сыра из молока.
+        </div>
+        <img src="images/severin.jpg" alt="Severin" />
+        <ul>
+          <li data-id="GH">
+            <a href="https://github.com/Diatom">Git Hub</a>
+          </li>
+          <li data-id="Fb">
+            <a href="https://www.facebook.com/severin.bo">Facebook</a>
+          </li>
+          <li data-id="Vk">
+            <a href="https://vk.com/severinb">Vk</a>
+          </li>
+          <li data-id="@">
+            <a href="mailto:severin.b@me.com">severin.b@me.com</a>
+          </li>
+          <li data-id="+7">
+            <a href="tel:+7(903)186-93-32">+7(903)186-93-32</a>
+          </li>
+        </ul>
+      </section>
+      <section id="projects" class="projects">
+        <h1>
+          <a href="#projects" class="anchor" aria-hidden="true">
+            <img
+              src="/images/anchor.png"
+              alt="anchor"
+              width="15px"
+              height="15px"
+            />
+          </a>
+          Проекты
+        </h1>
+        <div class="one">
+          <h2>Страничка-превью интернет магазина</h2>
+          <p>
+            Превью интернет магазина. В проекте использовал Реакт и оригинальный
+            Java Script. Адаптивная вертска.
+          </p>
+          <div class="buttons">
+            <a href="projects/big-shop-test/index.html">Проект</a>
+            <a href="https://github.com/Diatom/big-shop-test"></a>
+          </div>
+        </div>
+        <div class="one">
+          <h2>Рецепты сыра</h2>
+          <p>
+            Сайт с подробным описанием технологии производства сыров на основе
+            моего опыта.
+          </p>
+          <div class="buttons">
+            <a href="projects/recipe-cheese.html">Проект</a>
+            <a href="https://github.com/Diatom/recipes-of-cheeses"></a>
+          </div>
+        </div>
+        <div class="one">
+          <h2>Список дел</h2>
+          <p>Приложение на оригинальном Java Script.</p>
+          <div class="buttons">
+            <a href="projects/todo.html">Проект</a>
+            <a href="https://github.com/Diatom/to-do-list-js"></a>
+          </div>
+        </div>
+        <div class="one">
+          <h2>Мой сайт на React</h2>
+          <p>
+            Первая версия моего сайта полностью написанного на React, без учета
+            Progressive enhancment.
+          </p>
+          <div class="buttons">
+            <a href="https://github.com/Diatom/my-site"></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      © 2019. Сделал
+      <a href="https://github.com/Diatom/my-site-2">Severin B.</a>
+    </footer>
+  </body>
+</html>

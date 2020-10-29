@@ -1,0 +1,19 @@
+{
+  "name": "my-site-2",
+  "version": "1.0.0",
+  "description": "My own site-portfolio with responsive design.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Diatom/my-site-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Diatom/my-site-2/issues"
+  },
+  "homepage": "https://github.com/Diatom/my-site-2#readme"
+}
